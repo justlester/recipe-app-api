@@ -45,9 +45,6 @@ python manage.py runserver
 
 Install mysql client
 
-```
-pip install mysqlclient
-```
 
 Change DATABASES IN app/settings.py
 
