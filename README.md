@@ -43,9 +43,6 @@ python manage.py runserver
 
 <h1>Setup Database:</h1>
 
-Install mysql client
-
-
 Change DATABASES IN app/settings.py
 
 ```
