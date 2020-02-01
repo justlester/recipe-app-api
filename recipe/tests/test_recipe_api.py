@@ -111,7 +111,9 @@ class PrivateRecipeApiTests(TestCase):
     #         'times_minutes': 30,
     #         'price':5.00
     #     }
+    
     #     res = self.client.post(RECIPES_URL,payload)
+
     #     self.assertEqual(res.status_code, status.HTTP_201_CREATED)
     #     recipe = Recipe.objects.get(id=res.data['id'])
     #     for key in payload.keys():
@@ -127,7 +129,9 @@ class PrivateRecipeApiTests(TestCase):
     #         'time_minutes': 60,
     #         'price': 20.00
     #     }
+
     #     res = self.client.post(RECIPES_URL,payload)
+
     #     self.assertEqual(res.status_code, status.HTTP_201_CREATED)
     #     recipe = Recipe.objects.get(id=res.data['id'])
     #     tags = recipe.tags.all()
@@ -145,7 +149,9 @@ class PrivateRecipeApiTests(TestCase):
     #         'time_minutes': 20,
     #         'price':7.00
     #     }
+
     #     res = self.client.post(RECIPES_URL,payload)
+
     #     self.assertEqual(res.status_code, status.HTTP_201_CREATED)
     #     recipe = Recipe.objects.get(id=res.data['id'])
     #     ingredients = recipe.ingredients.all()
@@ -163,7 +169,9 @@ class PrivateRecipeApiTests(TestCase):
     #         'tags' : [new_tag.id]
     #     }
     #     url = detail_url(recipe.id)
+
     #     self.client.patch(url, payload)
+
     #     recipe.refresh_from_db()
     #     self.assertEqual(recipe.title, payload['title'])
     #     tags = recipe.tags.all()
@@ -180,7 +188,9 @@ class PrivateRecipeApiTests(TestCase):
     #         'price': 5.00
     #     }
     #     url = detail_url(recipe.id)
+
     #     self.client.put(url,payload)
+
     #     recipe.refresh_from_db()
     #     self.assertEqual(recipe.title, payload['title'])
     #     self.assertEqual(recipe.time_minutes, payload['time_minutes'])
