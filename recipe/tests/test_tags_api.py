@@ -33,7 +33,7 @@ class PrivateTagsApiTest(TestCase):
             'password'
         )
         self.client = APIClient()
-        self.client.force_authentication(self.user)
+        self.client.force_authenticate(self.user)
 
     def test_retrieve_tags(self):
         """Test retrieving tags"""
